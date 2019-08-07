@@ -3,13 +3,12 @@ import initialState from './blank-initial-state';
 
 export default function blankReducer(state = initialState, action) {
   switch (action.type) {
-
     case ACTION_TYPE:
       return {
         ...state,
-        
       };
 
-    default: return state;
+    default:
+      return state;
   }
 }
